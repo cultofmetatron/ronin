@@ -1,0 +1,13 @@
+<input
+  type="submit"
+  {{#if id}}              id="{{id}}" {{/if}}
+  {{#if class}}           class="{{#each class}}{{this}} {{/each}}"{{/if}}
+  {{#if name}}            name="{{name}}" {{/if}}
+  {{#if form}}            form="{{form}}" {{/if}}
+  {{#if autofocus}}       autofocus="{{autofocus}}" {{/if}}
+  {{#if disabled}}        disabled="{{disabled}}" {{/if}}
+  {{#if formaction}}      formaction="{{formaction}}" {{/if}}
+  {{#if formenctype}}     formenctype="{{formenctype}}" {{/if}}
+  {{#if formmethod}}      formmethod="{{formmethod}}" {{/if}}
+  {{#if formnovalidate}}  formnovalidate="{{formnovalidate}}" {{/if}}
+  {{#if formtarget}}      formtarget="{{formtarget}}" {{/if}}>

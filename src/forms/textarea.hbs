@@ -1,0 +1,20 @@
+<textarea
+  {{#if id}}           id="{{id}}"                              {{/if}}
+  {{#if class}}        class="{{#each class}}{{this}} {{/each}}"{{/if}}
+  {{#if name}}         name="{{name}}"                          {{/if}}
+  {{#if autofocus}}    autofocus="{{autofocus}}"                {{/if}}
+  {{#if cols}}         cols="{{cols}}"                          {{/if}}
+  {{#if disabled}}     disabled="{{disabled}}"                  {{/if}}
+  {{#if form}}         form="{{form}}"                          {{/if}}
+  {{#if maxlength}}    maxlength="{{maxlength}}"                {{/if}}
+  {{#if placeholder}}  placeholder="{{placeholder}}"            {{/if}}
+  {{#if readonly}}     readonly="{{readonly}}"                  {{/if}}
+  {{#if required}}     required="{{required}}"                  {{/if}}
+  {{#if rows}}         rows="{{rows}}"                          {{/if}}
+  {{#if selectionDirection}} selectionDirection="{{selectionDirection}}" {{/if}}
+  {{#if selectionEnd}} selectionEnd="{{selectionEnd}}"          {{/if}}
+  {{#if selectionStart}} selectionStart="{{selectionStart}}"    {{/if}}
+  {{#if spellcheck }}  spellcheck="{{spellcheck}}"              {{/if}}
+  {{#if wrap}}         wrap="{{wrap}}"                          {{/if}}>
+  {{content}}
+</textarea>
