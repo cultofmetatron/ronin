@@ -2,7 +2,7 @@
 
 var helper = (function(handlebars) {
   //klasses used to prevent conflict
-  Handlebars.registerHelper('classes', function(klasses) {
+  handlebars.registerHelper('classes', function(klasses) {
     var text = [];
     if (klasses instanceof Array) {
       klasses.forEach(function(klass) {
@@ -22,7 +22,21 @@ var helper = (function(handlebars) {
     }
   });
 
-
+  handlebars.registerHelper('attributes', function(attributes) {
+    /* loop through each of the attributes and for each one,
+     * print out attribute=attributes[attribute]
+     * if attributes[attribute] is an array, perform a join first
+     * */
+    var outString = [];
+    for (var attribute in attributes) {
+      if (attribute instanceof Array) {
+        outString.push(attribute + '="' + (attributes[attribute]).join(' ') + '"');
+      } else {
+        outString.push(attribute + '="' + attributes[attribute] + '"');
+      }
+    }
+    return outString.join(' ');
+  });
 
 });
 
