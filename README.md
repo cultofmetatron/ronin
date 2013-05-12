@@ -10,3 +10,12 @@ TODO's
 
 
 
+###the dream
+
+ I want a set of awesome handlebars templates and helpers to
+ be around to help me rapidly wack together bootstrap templates. with any
+ luck..
+
+
+
+

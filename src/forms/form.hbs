@@ -1,11 +1,3 @@
-<form id="{{id}}" {{#if class}} class="{{#each class}} {{this}} {{/each}}" {{/if}}
-  {{#if name}} name="{{name}}" {{/if}}
-  {{#if accept-charset}} {{accept-charset}} {{/if}}
-  {{#if action}} action="{{action}}" {{/if}}
-  {{#if autocomplete}} autocomplete="{{autocomplete}}" {{/if}}
-  {{#if enctype}} enctype="{{enctype}}" {{/if}}
-  {{#if method}} method="{{enctype}} {{/if}}
-  {{#if novalidate}} novalidate={{novalidate}} {{/if}}
-  {{#if target}} target="{{target}}" {{/if}}>
+<form {{#attributes attributes}} >
   {{contents}}
 </form>
